@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/login_bj"
+        android:scaleType="centerCrop"
+        />
+    <ImageView
+        android:id="@+id/iv_res_fh"
+        android:layout_width="@dimen/dp_jy_23"
+        android:layout_height="@dimen/dp_jy_23"
+        android:src="@mipmap/login_fh"
+        android:layout_marginTop="@dimen/dp_jy_37"
+        android:layout_marginLeft="@dimen/dp_jy_12"
+        android:onClick="widgetClick"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_login"
+        android:layout_marginLeft="@dimen/dp_jy_12"
+        android:layout_marginRight="@dimen/dp_jy_12"
+        android:layout_marginTop="@dimen/dp_jy_141"
+
+    >
+        <TextView
+            android:id="@+id/tv_login_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textColor="#333333"
+            android:textSize="@dimen/sp_20"
+            android:layout_marginTop="@dimen/dp_jy_32"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:id="@+id/et_res_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_jy_5"
+            android:layout_marginLeft="@dimen/dp_jy_20"
+            android:layout_toRightOf="@+id/image_res_user"
+            android:layout_alignTop="@+id/image_res_name"
+            android:background="@null"
+            android:hint="请输入手机号"
+            android:digits="1234567890"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textSize="@dimen/sp_18" />
+
+
+        <ImageView
+            android:id="@+id/image_res_name"
+            android:layout_below="@+id/tv_login_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_jy_28"
+            android:layout_marginTop="@dimen/dp_jy_50"
+            android:src="@mipmap/login_name"
+            android:scaleType="centerInside"
+            />
+
+        <View
+            android:id="@+id/view_res1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_jy_1"
+            android:layout_below="@+id/et_res_name"
+            android:layout_marginTop="@dimen/dp_jy_10"
+            android:layout_marginLeft="@dimen/dp_jy_27"
+            android:layout_marginRight="@dimen/dp_jy_30"
+            android:background="@color/color_gray2" />
+
+        <EditText
+            android:id="@+id/et_res_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_jy_5"
+            android:layout_marginLeft="@dimen/dp_jy_20"
+            android:layout_toRightOf="@+id/image_res_user"
+            android:layout_alignTop="@+id/image_res_user"
+            android:background="@null"
+
+            android:hint="请输入密码"
+            android:inputType="phone|number"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textSize="@dimen/sp_18" />
+
+
+        <ImageView
+            android:id="@+id/image_res_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_res1"
+            android:layout_marginLeft="@dimen/dp_jy_28"
+            android:layout_marginTop="29dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/login_pass" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_jy_1"
+            android:layout_below="@+id/et_res_user"
+            android:layout_marginLeft="@dimen/dp_jy_27"
+            android:layout_marginRight="@dimen/dp_jy_30"
+            android:layout_marginTop="@dimen/dp_jy_10"
+            android:background="@color/color_gray2" />
+
+        <EditText
+            android:id="@+id/et_res_pswd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view5"
+            android:layout_marginBottom="@dimen/dp_jy_5"
+            android:layout_marginLeft="@dimen/dp_jy_20"
+            android:layout_marginTop="@dimen/dp_jy_23"
+            android:layout_toRightOf="@+id/image_res_pswd"
+            android:background="@null"
+            android:hint="请再次输入密码"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/image_res_pswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_res_user"
+            android:src="@mipmap/login_pass"
+            android:layout_marginLeft="@dimen/dp_jy_28"
+            android:layout_alignTop="@+id/et_res_pswd"
+            android:scaleType="centerInside"
+       />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_jy_1"
+            android:layout_below="@+id/et_res_pswd"
+            android:layout_marginLeft="@dimen/dp_jy_27"
+            android:layout_marginRight="@dimen/dp_jy_30"
+            android:layout_marginTop="@dimen/dp_jy_10"
+            android:background="@color/color_gray2" />
+
+        <EditText
+            android:id="@+id/et_res_dz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view3"
+            android:layout_marginBottom="@dimen/dp_jy_5"
+            android:layout_marginLeft="@dimen/dp_jy_20"
+            android:layout_marginTop="@dimen/dp_jy_23"
+            android:layout_toRightOf="@+id/image_res_pswd"
+            android:background="@null"
+            android:hint="请输入联系地址"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/image_res_dz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_res_user"
+            android:src="@mipmap/login_adress"
+            android:layout_marginLeft="@dimen/dp_jy_28"
+            android:layout_alignTop="@+id/et_res_dz"
+            android:scaleType="centerInside"
+            />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_jy_1"
+            android:layout_below="@+id/et_res_dz"
+            android:layout_marginLeft="@dimen/dp_jy_27"
+            android:layout_marginRight="@dimen/dp_jy_30"
+            android:layout_marginTop="@dimen/dp_jy_10"
+            android:background="@color/color_gray2" />
+
+
+
+        <Button
+            android:id="@+id/btn_res_res"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view4"
+            android:layout_marginLeft="@dimen/dp_jy_35"
+            android:layout_marginRight="@dimen/dp_jy_35"
+            android:layout_marginTop="@dimen/dp_jy_30"
+            android:background="@drawable/bg_login1"
+            android:gravity="center"
+            android:text="立即注册"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp_18"
+            android:layout_marginBottom="@dimen/dp_jy_30"
+
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

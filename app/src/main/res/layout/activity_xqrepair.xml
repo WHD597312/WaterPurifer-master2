@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rl_main_father"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view_main_1"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="#ffffff" />
+
+        <LinearLayout
+            android:id="@+id/li_main_bt"
+            android:layout_below="@+id/view_main_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_jy_50"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            >
+            <ImageView
+                android:id="@+id/iv_main_memu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingRight="@dimen/dp_jy_50"
+                android:layout_weight="1"
+                android:src="@mipmap/black_fh"
+                android:scaleType="centerInside"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="维修单"
+                android:textSize="@dimen/sp_18"
+                android:textColor="#333333"
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:paddingLeft="@dimen/dp_jy_50"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout_xq"
+        android:layout_below="@+id/li_main_bt"
+        android:layout_marginTop="@dimen/dp_jy_10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="#fff"
+        app:srlPrimaryColor="#444"
+        app:srlFixedHeaderViewId="@+id/profile"
+        app:srlEnablePreviewInEditMode="false"
+        app:srlEnableLoadMoreWhenContentNotFull="false"
+        >
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_xqrepair"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    </RelativeLayout>
+

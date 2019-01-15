@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_jy_250"
+    android:background="@drawable/bg_login"
+    >
+    <TextView
+        android:id="@+id/tv_choose_qx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/color_gray2"
+        android:layout_marginTop="@dimen/dp_jy_20"
+        android:layout_marginLeft="@dimen/dp_jy_20"
+        />
+    <TextView
+        android:id="@+id/tv_choose_qd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/color_toblue"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_jy_20"
+        android:layout_marginRight="@dimen/dp_jy_20"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/tv_choose_qd"
+        android:layout_marginTop="@dimen/dp_jy_20"
+        android:layout_marginBottom="@dimen/dp_jy_20"
+        android:id="@+id/rv_choosegz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>

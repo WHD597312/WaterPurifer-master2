@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_jy_300"
+        android:layout_height="@dimen/dp_jy_400"
+        android:layout_centerInParent="true"
+        android:background="@drawable/timer_task_back"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#212121"
+            android:text="定时任务"
+            android:layout_marginTop="@dimen/dp_jy_28"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/sp_18"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_jy_36">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始时间"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#a1a1a0"
+                android:layout_weight="1"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="结束时间"
+                android:textSize="@dimen/sp_14"
+                android:textColor="#a1a1a0"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_jy_26"
+            android:layout_marginBottom="@dimen/dp_jy_40">
+
+
+
+            <com.weigan.loopview.LoopView
+                android:id="@+id/openHour"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_jy_20"/>
+            <com.weigan.loopview.LoopView
+                android:id="@+id/openMin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dp_jy_30"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#e3e3e3"/>
+            <com.weigan.loopview.LoopView
+                android:id="@+id/closeHour"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_jy_30"/>
+
+
+            <com.weigan.loopview.LoopView
+                android:id="@+id/closeMin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dp_jy_20"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_jy_1"
+            android:background="#e3e3e3"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_jy_50"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/button_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="取消"
+                android:textSize="@dimen/sp_16"
+                android:textColor="#434343"
+                android:gravity="center"/>
+            <View
+                android:layout_width="@dimen/dp_jy_1"
+                android:layout_height="match_parent"
+                android:background="#e3e3e3"/>
+            <TextView
+                android:id="@+id/button_ensure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="完成"
+                android:textSize="@dimen/sp_16"
+                android:textColor="#434343"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

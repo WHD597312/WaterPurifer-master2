@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_jy_380"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:id="@+id/bottomSheetLayout"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="@dimen/dp_jy_140"
+    >
+
+    <ImageView
+        android:id="@+id/iv_main_bootom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/main_boottom"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_main_bootom"
+        android:background="#44deff"
+        android:layout_marginTop="-4dp"
+        >
+        <ImageView
+            android:id="@+id/iv_top_sl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_jy_28"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/main_top_sl"
+            />
+
+     <android.support.v7.widget.RecyclerView
+         android:id="@+id/rv_recy"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:overScrollMode="never"
+         >
+
+     </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+    </RelativeLayout>

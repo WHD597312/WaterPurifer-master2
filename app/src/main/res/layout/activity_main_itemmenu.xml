@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_menu_1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_jy_50">
+     <ImageView
+         android:id="@+id/iv_menu_pic"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@mipmap/menu_bx"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="@dimen/dp_jy_42"
+         />
+    <TextView
+        android:id="@+id/tv_menu_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_menu_pic"
+        android:layout_marginLeft="@dimen/dp_jy_15"
+        android:textSize="@dimen/sp_16"
+        android:textColor="#333333"
+        android:layout_centerVertical="true"
+        android:text="报修"
+        />
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/menu_xzn"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_jy_35"
+        />
+
+</RelativeLayout>

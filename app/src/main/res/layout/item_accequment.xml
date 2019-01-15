@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_jy_165"
+    android:layout_height="@dimen/dp_jy_185"
+    android:background="@color/white"
+    android:id="@+id/rl_sequitem"
+    >
+
+    <TextView
+        android:id="@+id/tv_buy_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="365"
+        android:textSize="@dimen/sp_30"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp_jy_37"
+        android:textColor="@color/color_toblue"
+        />
+    <TextView
+        android:id="@+id/tv_buy_bz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="剩余天数（天）"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_buy_day"
+        android:layout_marginTop="@dimen/dp_jy_11"
+        android:textColor="#8c8c8c"
+        android:textSize="@dimen/sp_12"
+        />
+    <ImageView
+        android:id="@+id/iv_seqp_pic"
+        android:layout_below="@+id/iv_seqp_lx"
+        android:layout_marginTop="@dimen/dp_jy_40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/equ_jsq"
+        android:layout_centerHorizontal="true"
+
+        />
+    <TextView
+        android:id="@+id/tv_seqp_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="设备ID"
+        android:textSize="@dimen/sp_15"
+        android:textColor="#3e3e3e"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_jy_40"
+        />
+
+</RelativeLayout>

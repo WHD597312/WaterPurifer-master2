@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_jy_107"
+    android:layout_height="@dimen/dp_jy_55"
+    android:background="@drawable/bg_packages"
+    android:id="@+id/rl_package"
+    >
+    <TextView
+        android:id="@+id/tv_buy_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一个月"
+        android:textSize="@dimen/sp_14"
+        android:textColor="#494949"
+        android:layout_marginTop="@dimen/dp_jy_10"
+        android:layout_marginLeft="@dimen/dp_jy_10"
+        />
+    <TextView
+        android:id="@+id/tv_pakage_bz1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_jy_8"
+        android:layout_marginTop="@dimen/dp_jy_10"
+        android:text="元"
+        android:textColor="#bebebe"
+        android:textSize="@dimen/sp_12"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_pac_old"
+        android:layout_toLeftOf="@+id/tv_pakage_bz1"
+        android:layout_toRightOf="@+id/tv_buy_title"
+        android:layout_marginTop="@dimen/dp_jy_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv_packages_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="100"
+            android:textColor="#bebebe"
+            android:textSize="@dimen/sp_12" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:layout_alignLeft="@+id/tv_packages_price"
+            android:layout_alignRight="@+id/tv_packages_price"
+            android:background="#bebebe" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_pakage_bz2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_pakage_bz1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_jy_8"
+        android:layout_marginTop="@dimen/dp_jy_5"
+        android:text="元"
+        android:textColor="#bebebe"
+        android:textSize="@dimen/sp_12"
+        />
+    <TextView
+        android:id="@+id/tv_packages_jq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/tv_pakage_bz2"
+        android:layout_alignTop="@+id/tv_pakage_bz2"
+        android:text="现:99.9"
+        android:textColor="#bebebe"
+        android:textSize="@dimen/sp_12"
+        />
+</RelativeLayout>

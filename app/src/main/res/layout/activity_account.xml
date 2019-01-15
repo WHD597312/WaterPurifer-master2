@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <View
+        android:id="@+id/view_main_1"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#ffffff" />
+
+    <LinearLayout
+        android:id="@+id/li_main_bt"
+        android:layout_below="@+id/view_main_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_jy_50"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <ImageView
+            android:id="@+id/iv_main_memu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/dp_jy_50"
+            android:layout_weight="1"
+            android:src="@mipmap/black_fh"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="账户"
+            android:textSize="@dimen/sp_18"
+            android:textColor="#333333"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:paddingLeft="@dimen/dp_jy_50"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_equ_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/li_main_bt"
+        android:src="@mipmap/equment_ts"
+        android:layout_marginTop="@dimen/dp_jy_12"
+        android:layout_marginLeft="@dimen/dp_jy_20"
+        android:paddingTop="@dimen/dp_jy_3"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击设备购买该设备套餐"
+        android:layout_toRightOf="@+id/iv_equ_1"
+        android:layout_alignTop="@+id/iv_equ_1"
+        android:layout_marginLeft="@dimen/dp_jy_12"
+        android:textSize="@dimen/sp_12"
+        android:textColor="#663e3e3e"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_account"
+        android:layout_below="@+id/iv_equ_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:layout_marginTop="@dimen/dp_jy_12"
+        />
+
+
+</RelativeLayout>
